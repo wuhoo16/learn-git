@@ -52,6 +52,7 @@ public class Engine {
   // TODO: Complete this method
   // Player is either 0 or 1, row and column are valid and empty
   public void playerTurn(int player, int row, int col) {
+
     return;
   }
 
@@ -59,6 +60,13 @@ public class Engine {
   // Return true if the board is full
   // Return false if not
   public boolean checkTie() {
+    for(int r=0; r< BOARD_SIZE;r++){
+      for(int c=0; c< BOARD_SIZE; c++){
+        if(this.board[row][col].equals(" ")){
+          return false;
+        }
+      }
+    }
     return true;
   }
 
